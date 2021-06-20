@@ -1,11 +1,11 @@
 .App {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   height: 100vh;
 }
-
 .board{
   display: grid;
   justify-items: center;
@@ -15,7 +15,6 @@
 .cell{
   width: 100px;
   height: 25vh;
-  /* border-radius: 7px; */
   display: flex;
   justify-content: center;  
   align-items: center;
@@ -24,7 +23,12 @@
   color: #070046;
   box-sizing: border-box;
 }
-
+.X {
+  color: #070046;
+}
+.O {
+  color: tomato;
+}
 .cell:nth-child(1){
   border-right: 5px solid #171717;
   border-bottom: 5px solid #171717;
@@ -46,15 +50,12 @@
 .cell:nth-child(5){
   border: 5px solid #171717;
 }
-
 .cell:nth-child(6){
   border-left: 5px solid #171717;
   border-top: 5px solid #171717;
   border-bottom: 5px solid #171717;
 }
-
 .cell:nth-child(7){
-  /* border-left: 5px solid #171717; */
   border-right: 5px solid #171717;
   border-top: 5px solid #171717;
 }
